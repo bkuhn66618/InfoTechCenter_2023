@@ -29,6 +29,6 @@ while x != 20:
         sys.stdout.write("\r error")
         sys.exit()
     if x == 20:
-        print("InfoTech Center 2023 finished loading")
+        print("\r InfoTech Center 2023 finished loading")
         time.sleep(1)
         print("\n Operating System Loaded - Face Scanned - Access Granted")
