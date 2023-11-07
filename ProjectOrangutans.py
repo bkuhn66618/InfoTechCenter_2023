@@ -77,9 +77,9 @@ def gasLevelAlert():
     else:
         print("Error has occured, please wait for the system to restart")
         sys.exit()
+gasLevelAlertq()
 print("\n****************************************************\n")
 print("Checking Weather Conditions \n")
-
 #create a function randomly choosing the weather from a list
 def upcomingWeather():
     weatherForecast = ["Rain", "Snow", "Cloudy", "Cold", "Thunderstorm", "Hail", "Intense Temp Warning", "Blizzard", "Foggy", "Light Rain", "Freezing Rain", "Sunny", "Icy"]
@@ -137,13 +137,15 @@ def vehicleResponseSystem():
     else:
         print("There has been an error in the system. Turning off system")
         sys.exit()
-
+vehicleResponseSystem()
+app = 0
 while app == 0:
-    app = int(input("What would you like to activate? (1 for gas, 2 for weather, 3 to close "))
+    app = int(input("What would you like to activate? (1 for gas, 2 for weather, 3 to close)"))
     if app == 1:
         gasLevelAlert()
         app = 0
     elif app == 2:
+        upcomingWeather()
         vehicleResponseSystem()
         app = 0
     elif app == 3:
