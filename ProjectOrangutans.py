@@ -77,8 +77,6 @@ def gasLevelAlert():
     else:
         print("Error has occured, please wait for the system to restart")
         sys.exit()
-
-gasLevelAlert()
 print("\n****************************************************\n")
 print("Checking Weather Conditions \n")
 
@@ -138,4 +136,22 @@ def vehicleResponseSystem():
             print("Vehicle Response System has been engaged only allowing you to drive 30 mph, and remember to layer up for the cold")
     else:
         print("There has been an error in the system. Turning off system")
+        sys.exit()
+
+while app == 0:
+    app = int(input("What would you like to activate? (1 for gas, 2 for weather, 3 to close "))
+    if app == 1:
+        gasLevelAlert()
+        app = 0
+    elif app == 2:
+        vehicleResponseSystem()
+        app = 0
+    elif app == 3:
+        print("Shutting down system")
+        sys.exit()
+    elif app >= 3:
+        print("command does not exist")
+        app = 0
+    else:
+        ("error has occurred, restarting system")
         sys.exit()
