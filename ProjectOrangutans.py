@@ -60,7 +60,6 @@ def vehicleResponseSystem():
         elif temperature == "Winter":
             print("\n The National Weather Service has updated your alarm by 55 minutes because the forecast of a cold ", weatherAlert)
             print("Vehicle Response System has been engaged only allowing you to drive 30 mph, and remember to layer up for the cold")
-
     else:
         print("There has been an error in the system. Turning off system")
         sys.exit()
